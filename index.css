@@ -1,0 +1,167 @@
+/* index.css */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+header {
+	background-color: #003366;
+	height: 80px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul li {
+	margin: 0 15px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#intro {
+	text-align: center;
+	padding: 50px 20px;
+	background: #D3D3D3;
+	color: #fff;
+}
+
+#intro img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+#intro h1 {
+	font-size: 2.5em;
+	margin-top: 20px;
+}
+
+#intro p {
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+
+#intro .btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+#features {
+	padding: 50px 20px;
+	background: #fff;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.feature img {
+	width: 600px;
+	height: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+}
+
+.feature h2 {
+	margin: 20px 0 10px;
+	font-size: 1.8em;
+}
+
+.feature p {
+	font-size: 1em;
+	line-height: 1.6;
+	max-width: 800px;
+}
+
+#about {
+	padding: 50px 20px;
+	background: #f4f4f4;
+	text-align: center;
+}
+
+#about h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+#about p {
+	font-size: 1.1em;
+	line-height: 1.6;
+	max-width: 800px;
+	margin: 0 auto 40px;
+}
+
+.team {
+	margin-top: 40px;
+}
+
+.team h3 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.team .member {
+	margin-bottom: 20px;
+}
+
+.team .member p {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.team .member a {
+	display: inline-block;
+	margin-right: 10px;
+	color: #008cba;
+	text-decoration: none;
+}
+
+#about .btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #008cba;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 20px;
+}

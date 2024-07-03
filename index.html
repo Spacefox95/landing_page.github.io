@@ -1,68 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
 <header>
-	<nav>
-			<ul>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#about">About</a></li>
-			</ul>
-	</nav>
+    <nav>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
 </header>
-<section id="intro">
-	<img src="../landing_page.github.io/img/dashboard.png" alt="Cover Image">
-	<h1>Cartotrac Intranet</h1>
-	<p>My project is to create an Intranet for a drone enterprise. It should include all the basic functionnalities for an intranet</p>
-	<a href="URL_to_deployed_app" class="btn">Not deployed yet...</a>
-</section>
 
-<section id="features">
-	<div class="feature">
-			<img src="path/to/feature1.jpg" alt="Feature 1">
-			<h2>The user management</h2>
-			<p>The user management was one of the main part of the project, as it consist in adding users with specific authorizations. Every
-				user should be recognize, using an e-mail address and a password that are saved in an SQLite database. 
-				To correctly manage everything, I added routes to add, edit and delete users. All this tools are depending of the user "role", as a guest can not edit
-				anything, and the administrator ("superuser") can use every tools.
-			</p>
-	</div>
-	<div class="feature">
-			<img src="path/to/feature2.jpg" alt="Feature 2">
-			<h2>Document Import</h2>
-			<p>It was in my requirements from the friend I'm creating this Intranet for. He wanted to export and import his CV on this Intranet.
-				In order to achieve this, I coded a PDF import. The PDF files as saved in a Mongod database. 
-				Same as for the user management, I added routes with methods in order to add or delete PDF files.
-			</p>
-	</div>
-	<div class="feature">
-			<img src="path/to/feature3.jpg" alt="Feature 3">
-			<h2>Events</h2>
-			<p>As every intranet, I needed to implement a calendar. The easiest way as i I thought was to integrate the Google Calendar with API.
-				Indeed, it was a very good practical exercise, but a very complicated thing to achieve. So, at the end, I only add a route too receive 
-				event from the calendar.
-			</p>
-	</div>
-</section>
+<div class="container">
+    <section id="intro">
+        <img src="../landing_page.github.io/img/dashboard.png" alt="Cover Image">
+        <h1>Cartotrac Intranet</h1>
+        <p>My project is to create an Intranet for a drone enterprise. It should include all the basic functionalities for an intranet</p>
+        <a href="URL_to_deployed_app" class="btn">Not deployed yet...</a>
+    </section>
 
-<section id="about">
-	<h2>About This Project</h2>
-	<p>At the beginning, I didn't have any specific idea for this project. I though about creating a "CV" website, until I meet someone at a bar
-		in my town, Rabastens. This guy, Julien, was working in a drone service enterprise in Montauban. He told to me that he wanted to create his own enterprise
-		And he was looking for a developper, as he wanted a new website and an intranet. Moreover, he needed someone that codes in Python, as a lot of the tools he is using
-		with drone software are coded in Python. So I propose myself to create the intranet in a first time, and later the website 
-		and working on the Python tools. As it was my first real big project, I was probably too optimistic, as I only ended the intranet for the enterprise, Cartotrac.
-		I decided to work in Python for the backend, as I learned how to do that in my studies at Holberton School. For the frontend, I wanted to use
-		ReactJS as it's interactive, popular and there is a lot of documentation on it.
-		Even so it's not perfect, I'm still proud of what I've been able to achieve in only a month. The design isn't clearly the best,
-		but I only followed the color requirements from Julien.
-		About the functionnalities, I spend a lot of time to debug everything and even now, I'm not sure everyhting will work perfectly for the eternity. But as long as it work for the Demoday,
-		every thing should be fine !! 
-		Finally, I did this project because it's my portfolio project for Holberton School. I spend the first two weeks creating the backend, the next week on the frontend, 
-	four days on the google API, and finally I continued the backend and frontend till the end.</p>
-	<div class="team">
-			<h3>Team Members</h3>
-			<div class="member">
-					<p>Nathan Raynal</p>
-					<a href="https://www.linkedin.com/in/nathan-raynal-95a462296/">LinkedIn</a>
-					<a href="https://github.com/Spacefox95">GitHub</a>
-			</div>
-	</div>
-	<a href="https://github.com/Spacefox95/Portofolio-Project" class="btn">View Project on GitHub</a>
-</section>
+    <section id="features">
+        <div class="feature">
+            <img src="../landing_page.github.io/img/userlist.jpg" alt="Feature 1">
+            <h2>The user management</h2>
+            <p>The user management was one of the main parts of the project, as it consists of adding users with specific authorizations. Every
+                user should be recognized, using an e-mail address and a password that are saved in an SQLite database. 
+                To correctly manage everything, I added routes to add, edit and delete users. All these tools depend on the user "role", as a guest cannot edit
+                anything, and the administrator ("superuser") can use every tool.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="../landing_page.github.io/img/doc_import.jpg" alt="Feature 2">
+            <h2>Document Import</h2>
+            <p>It was in my requirements from the friend I'm creating this Intranet for. He wanted to export and import his CV on this Intranet.
+                In order to achieve this, I coded a PDF import. The PDF files are saved in a MongoDB database. 
+                Same as for the user management, I added routes with methods in order to add or delete PDF files.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="../landing_page.github.io/img/event.jpg" alt="Feature 3">
+            <h2>Events</h2>
+            <p>As every intranet, I needed to implement a calendar. The easiest way, as I thought, was to integrate the Google Calendar with API.
+                Indeed, it was a very good practical exercise, but a very complicated thing to achieve. So, at the end, I only added a route to receive 
+                events from the calendar.
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>At the beginning, I didn't have any specific idea for this project. I thought about creating a "CV" website, until I met someone at a bar
+            in my town, Rabastens. This guy, Julien, was working in a drone service enterprise in Montauban. He told me that he wanted to create his own enterprise
+            and he was looking for a developer, as he wanted a new website and an intranet. Moreover, he needed someone that codes in Python, as a lot of the tools he is using
+            with drone software are coded in Python. So I proposed myself to create the intranet in the first time, and later the website 
+            and working on the Python tools. As it was my first real big project, I was probably too optimistic, as I only ended the intranet for the enterprise, Cartotrac.
+            I decided to work in Python for the backend, as I learned how to do that in my studies at Holberton School. For the frontend, I wanted to use
+            ReactJS as it's interactive, popular and there is a lot of documentation on it.
+            Even so it's not perfect, I'm still proud of what I've been able to achieve in only a month. The design isn't clearly the best,
+            but I only followed the color requirements from Julien.
+            About the functionalities, I spend a lot of time to debug everything and even now, I'm not sure everything will work perfectly for the eternity. But as long as it works for the Demoday,
+            every thing should be fine !! 
+            Finally, I did this project because it's my portfolio project for Holberton School. I spend the first two weeks creating the backend, the next week on the frontend, 
+        four days on the google API, and finally I continued the backend and frontend till the end.</p>
+        <div class="team">
+            <h3>Team Member</h3>
+            <div class="member">
+                <p>Nathan Raynal</p>
+                <a href="https://www.linkedin.com/in/nathan-raynal-95a462296/">LinkedIn</a>
+                <a href="https://github.com/Spacefox95">GitHub</a>
+            </div>
+        </div>
+        <a href="https://github.com/Spacefox95/Portofolio-Project" class="btn">View Project on GitHub</a>
+    </section>
+</div>
+</body>
+</html>
